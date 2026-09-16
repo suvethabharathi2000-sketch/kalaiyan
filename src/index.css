@@ -1,0 +1,430 @@
+/* =========================
+   Global
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* =========================
+   Header
+========================= */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app-logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.app-nav button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #222;
+}
+
+.app-nav button:hover {
+  background: #222;
+}
+
+/* =========================
+   General Page
+========================= */
+
+#root {
+  min-height: 100vh;
+}
+
+#root > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-top: 16px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =========================
+   Forms
+========================= */
+
+form {
+  max-width: 650px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 15px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+  padding: 9px 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* =========================
+   Artisan List
+========================= */
+
+.artisan-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* =========================
+   Artisan Card
+========================= */
+
+.artisan-card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.artisan-card:hover {
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+}
+
+.artisan-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.artisan-card-title {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.artisan-card-content p {
+  margin: 8px 0;
+}
+
+.artisan-card-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 11px;
+}
+
+/* =========================
+   Artisan Request Card
+========================= */
+
+.artisan-request-card {
+  max-width: 800px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.artisan-request-card h2 {
+  margin-top: 0;
+}
+
+.artisan-request-card p {
+  margin: 8px 0;
+}
+
+/* =========================
+   Orders
+========================= */
+
+#root > div > div {
+  margin-bottom: 20px;
+}
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* =========================
+   Images
+========================= */
+
+img {
+  max-width: 100%;
+}
+
+img[alt="Final Artwork"],
+img[alt="Subject"] {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+/* =========================
+   Messages
+========================= */
+
+.loading {
+  font-size: 16px;
+}
+
+.error-message {
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  background: #ffe5e5;
+  color: #a00000;
+}
+
+.success-message {
+  padding: 10px 14px;
+  margin: 12px 0;
+  border-radius: 6px;
+  background: #e6f7e6;
+  color: #176b17;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+
+  .app-nav {
+    width: 100%;
+  }
+
+  .app-nav button {
+    flex: 1;
+  }
+
+  #root > div {
+    padding: 20px;
+  }
+
+  .artisan-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-nav button {
+    width: 100%;
+  }
+
+  #root > div {
+    padding: 16px;
+  }
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 20px;
+}
+
+.gallery-image {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.artisan-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 12px;
+  font-size: 15px;
+}
+
+.artisan-card-rating span:first-child {
+  font-weight: 600;
+}
+
+.artisan-card-rating span:last-child {
+  color: #666;
+}
+
+.artisan-image-slider {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.artisan-image-slider .artisan-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.artisan-image-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artisan-image-slider button:first-child {
+  left: 8px;
+}
+
+.artisan-image-slider button:last-child {
+  right: 8px;
+}
+
+.artisan-image-slider button:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+.artisan-image-counter {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  padding: 3px 8px;
+  border-radius: 12px;
+
+  font-size: 12px;
+}
