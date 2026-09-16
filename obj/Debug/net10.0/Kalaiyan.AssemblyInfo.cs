@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kalaiyan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7e92de5970e761585d0dccfe76207269d0e2b13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kalaiyan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kalaiyan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

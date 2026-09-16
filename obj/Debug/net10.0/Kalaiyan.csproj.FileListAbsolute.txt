@@ -152,3 +152,4 @@ C:\Users\mahin\OneDrive\Desktop\dotnet\Kalaiyan\bin\Debug\net10.0\Microsoft.Iden
 C:\Users\mahin\OneDrive\Desktop\dotnet\Kalaiyan\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\mahin\OneDrive\Desktop\dotnet\Kalaiyan\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\mahin\OneDrive\Desktop\dotnet\Kalaiyan\bin\Debug\net10.0\Kalaiyan.staticwebassets.runtime.json
+C:\Users\mahin\OneDrive\Desktop\dotnet\Kalaiyan\obj\Debug\net10.0\Kalaiyan.sourcelink.json
